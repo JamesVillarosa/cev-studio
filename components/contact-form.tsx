@@ -13,7 +13,7 @@ function SubmitButton() {
     <button
       type="submit"
       disabled={pending}
-      className="group relative mt-2 inline-flex h-12 w-full items-center justify-center gap-2 overflow-hidden rounded-xl bg-ink text-[0.95rem] font-medium text-paper transition-all duration-300 hover:bg-ink/90 disabled:cursor-not-allowed disabled:opacity-70"
+      className="btn-lime group relative mt-2 inline-flex h-12 w-full items-center justify-center gap-2 overflow-hidden rounded-xl text-[0.95rem] font-semibold disabled:cursor-not-allowed disabled:opacity-70"
     >
       <span
         className={`flex items-center gap-2 transition-all duration-300 ${
@@ -29,7 +29,7 @@ function SubmitButton() {
         </span>
       </span>
       {pending && (
-        <span className="absolute inset-0 flex items-center justify-center gap-2 text-paper">
+        <span className="absolute inset-0 flex items-center justify-center gap-2 text-[#1d1d1d]">
           <Spinner />
           Sending
         </span>
@@ -40,7 +40,7 @@ function SubmitButton() {
 
 function Spinner() {
   return (
-    <span className="inline-block h-4 w-4 animate-spin rounded-full border-[1.5px] border-paper/40 border-t-paper" />
+    <span className="inline-block h-4 w-4 animate-spin rounded-full border-[1.5px] border-[#1d1d1d]/30 border-t-[#1d1d1d]" />
   );
 }
 

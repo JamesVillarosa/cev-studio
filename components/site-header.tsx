@@ -43,7 +43,7 @@ export function SiteHeader() {
           ))}
           <a
             href="#contact"
-            className="group inline-flex items-center gap-2 rounded-full border border-ink/15 bg-ink px-4 py-1.5 text-sm text-paper transition-all duration-300 hover:gap-3 hover:bg-ink/90"
+            className="btn-lime group inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-semibold transition-all duration-300 hover:gap-3"
           >
             Start a project
             <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-0.5">
@@ -92,7 +92,7 @@ export function SiteHeader() {
           <a
             href="#contact"
             onClick={() => setOpen(false)}
-            className="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-ink px-5 py-2 text-sm text-paper"
+            className="btn-lime mt-2 inline-flex w-fit items-center gap-2 rounded-full px-5 py-2 text-sm font-semibold"
           >
             Start a project →
           </a>

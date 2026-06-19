@@ -2,8 +2,19 @@ import { ContactForm } from "./contact-form";
 
 export function Hero() {
   return (
-    <section id="contact" className="relative scroll-mt-20">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-32 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-10 lg:pb-28 lg:pt-40">
+    <section id="contact" className="relative scroll-mt-20 overflow-hidden">
+      {/* Ambient light — a soft lime source up top, an olive pool low-left.
+          Sets the mood without putting flat green on a single surface. */}
+      <div
+        aria-hidden
+        className="glow-lime pointer-events-none absolute -right-32 -top-24 h-[40rem] w-[40rem] opacity-70"
+      />
+      <div
+        aria-hidden
+        className="glow-olive pointer-events-none absolute -bottom-40 -left-40 h-[34rem] w-[34rem]"
+      />
+
+      <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 pb-20 pt-32 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:px-10 lg:pb-28 lg:pt-40">
         {/* Left — the statement */}
         <div className="reveal is-visible">
           <p className="label flex items-center gap-2">
@@ -15,7 +26,7 @@ export function Hero() {
             A studio for brands
             <br />
             that refuse to{" "}
-            <span className="italic">blend in</span>
+            <span className="text-lime italic">blend in</span>
             <span className="dot">.</span>
           </h1>
 

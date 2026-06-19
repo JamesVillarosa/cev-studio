@@ -12,7 +12,7 @@ function Submit() {
     <button
       type="submit"
       disabled={pending}
-      className="mt-2 inline-flex h-11 w-full items-center justify-center rounded-xl bg-ink text-sm font-medium text-paper transition-opacity hover:opacity-90 disabled:opacity-70"
+      className="btn-lime mt-2 inline-flex h-11 w-full items-center justify-center rounded-xl text-sm font-semibold disabled:opacity-70"
     >
       {pending ? "Checking…" : "Enter"}
     </button>

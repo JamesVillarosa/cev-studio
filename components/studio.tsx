@@ -25,7 +25,7 @@ export function Studio() {
             <p className="mt-6 font-display text-[clamp(1.9rem,3.4vw,2.9rem)] leading-[1.08] text-ink">
               We&apos;re a small, independent studio that designs and builds
               digital products for people who&apos;d rather be{" "}
-              <span className="italic">unmistakable</span> than safe
+              <span className="text-lime italic">unmistakable</span> than safe
               <span className="dot">.</span>
             </p>
             <p className="mt-7 max-w-md leading-relaxed text-ink-muted">
